@@ -1,3 +1,4 @@
+import numpy as np
 #q1
 np.count_nonzero(np.diff(np.loadtxt('day1.txt')) > 0)
 #q2
