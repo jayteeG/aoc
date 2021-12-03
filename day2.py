@@ -1,8 +1,7 @@
 import pandas as pd
 #q1
 
-df = pd.read_csv('aoc_2.txt',sep=' ',header=None)
-df.columns=['case','value']
+df = pd.read_csv('aoc_2.txt',sep=' ',header=None, names=['case','value'])
 q1 = (df[df.case=='down'].value.sum() - df[df.case=='up'].value.sum()) * df[df.case=='forward'].value.sum()
 
 #q2
